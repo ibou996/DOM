@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5a66f49ce9.js" crossorigin="anonymous"></script>
+    <title>DOM CHEKPOINT</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="montableau">
+            <h1>Mon Panier</h1>
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>Nom de l'article</th>
+
+
+                        <th>Quantité</th>
+                        <th>Prix unitaire</th>
+                        <th>Prix Total</th>
+                    </tr>
+                </thead>
+
+                <tbody id="produits">
+                    <tr>
+                        <td class="article-name">
+                            <div style="margin-right:1rem"><img src="image/n530.jpg"></div>
+                            <div>
+                                <h3>New Balance 530</h3> <a class="remove" id="1"></a>
+                            </div>
+                        </td>>
+                        <td class="quantite">
+                            <button class="qtyplus" id="btnp">+</button>
+                            <input type="text" readonly placeholder="Prix Unitaire" class="qty" value="1">
+                            <button class="qtymoins" id="btnm">-</button>
+                            <div class="btncoeur">
+                                <button class="icon" onclick="changeBtn()" id="icon"><i class="fa-solid fa-heart"></i></button>
+                            </div>
+                        </td>
+                        <td class="prix">150€</td>
+                        <td class="prixTotal">150€</td>
+                    </tr>
+                    <tr>
+                        <td class="article-name">
+                            <div style="margin-right:1rem"><img src="image/n2002.webp"></div>
+                            <div>
+                                <h3>New Balance 530</h3> <a class="remove" id="1"></a>
+                            </div>
+                        </td>>
+                        <td class="quantite">
+                            <button class="qtyplus" id="btnp1">+</button>
+                            <input type="text" readonly placeholder="Prix Unitaire" class="qty1" value="1">
+                            <button class="qtymoins" id="btnm2">-</button>
+                            <div class="btncoeur">
+                                <button class="icon1" onclick="changeButton()"><i class="fa-solid fa-heart" id="icon1"></i></button>
+                            </div>
+                        </td>
+                        <td class="prix1">190€</td>
+                        <td class="prixTotal1">190€</td>
+                    </tr>
+                
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td><button type="button" id="add_button">Vider le Panier</button></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <h2><i class="fa-solid fa-cart-shopping"></i>Total : <span class="total_display" id="total_display">0 €</span></h2>
+        </div>
+    </div>
+
+
+
+
+    <script src="java.js"></script>
+
+</body>
+
+</html>
